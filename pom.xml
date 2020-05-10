@@ -15,6 +15,7 @@
         <module>my-rpc-transport</module>
         <module>my-rpc-server</module>
         <module>my-rpc-client</module>
+        <module>my-rpc-demo</module>
     </modules>
     <properties>
         <java.version>11</java.version>

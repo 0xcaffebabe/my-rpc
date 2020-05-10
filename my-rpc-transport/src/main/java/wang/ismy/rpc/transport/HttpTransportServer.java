@@ -29,8 +29,8 @@ public class HttpTransportServer implements TransportServer {
         server = new Server(port);
         ServletContextHandler ctx = new ServletContextHandler();
         server.setHandler(ctx);
-
         ServletHolder holder = new ServletHolder();
+        holder.setServlet(new RequestServlet());
         ctx.addServlet(holder,"/*");
     }
 
